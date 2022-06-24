@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "**/__*__/**"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "paths": {
+      "@zeusjs/librarian-core": ["../elements-core/dist"],
+      "@zeusjs/librarian-core/*": ["../elements-core/dist/*"],
+    }
+  }
+}
